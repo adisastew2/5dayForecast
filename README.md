@@ -6,5 +6,5 @@ To use this application
   Clone this repository to your local machine
   Go into your terminal
   Navigate to your local copy
-  npm install
-  npm start
+  > npm install
+  > npm start
