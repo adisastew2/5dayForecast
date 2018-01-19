@@ -12,6 +12,7 @@ export default class SearchBar extends Component {
       <form className = "input-group" >
         <input 
           placeholder = "Input city name for 5 day forecast"
+          className = "form-control"
         />
         <span className = "input-group-btn">
           <button type = "submit" className = "btn btn-secondary">Submit</button>
