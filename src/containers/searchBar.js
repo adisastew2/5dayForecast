@@ -5,6 +5,11 @@ export default class SearchBar extends Component {
     super(props);
 
     this.state = { term: '' };
+    this.onInputChange = this.onInputChange.bind(this);
+  }
+
+  onInputChange(event) {
+    this.setState({term: event.target.value});
   }
 
   render () {
@@ -14,7 +19,7 @@ export default class SearchBar extends Component {
           placeholder = "Input city name for 5 day forecast"
           className = "form-control"
           value = {this.state.term}
-          
+          onChange = {this.onInputChange}
         />
         <span className = "input-group-btn">
           <button type = "submit" className = "btn btn-secondary">Submit</button>
